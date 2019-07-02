@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Purchase Movie Tickets</title>
+  </head>
+  <body>
+   <div class="container">
+     <form id="ticket">
+  <div class="form-group">
+    <label for="movieTitle">Select Movie:</label>
+    <select class="form-control" id="movieTitle">
+      <option>The Warriors</option>
+      <option>Toy Story 4</option>
+      <option>Midsommar</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="movieTime">Select Show Time:</label>
+    <select class="form-control" id="movieTime">
+      <option>1:00 PM</option>
+      <option>7:00 PM</option>
+      <option>10:00 PM</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="age">Age:</label>
+    <select class="form-control" id="age">
+      <option>Junior</option>
+      <option>Adult</option>
+      <option>Senior</option>
+    </select>
+    <button type="submit" class="btn btn-primary">Select</button>
+  </div>
+</form>
+   </div>
+  </body>
+</html>
