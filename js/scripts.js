@@ -1,23 +1,23 @@
 // Business Logic for Contacts
 
 
-function Ticket(movieTitle, movieTime, age) {
-  this.movieTitle = movieTitle,
-  this.movieTime = movieTime,
+function Ticket(title, time, age) {
+  this.movieTitle = title,
+  this.movieTime = time,
   this.age = age
 }
-
 
 // user interface logic
 
 $(document).ready(function() {
-  $("form#movies").submit(function(event) {
+  $("form#ticket").submit(function(event) {
     event.preventDefault();
 
     var movieTitle = ($("#movieTitle").val())
     var movieTime = ($("#movieTime").val())
     var age = ($("#age").val())
     console.log(newTicket);
+
   });
 });
 
