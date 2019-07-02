@@ -13,7 +13,7 @@
      <h1 class="display-4">Now Playing at Epicodus Cinema 3 </h1>
      <div class="row">
         <div class="col-md-3">
-          <div class="card" style="width: 15rem;">
+          <div class="card" style="width: 18rem;">
               <img src="https://m.media-amazon.com/images/M/MV5BZTBmNTQ5OGYtNmJjYi00NTVjLTg2YzgtMTAxM2NiZDdhZTQyXkEyXkFqcGdeQXVyNTc4Njg5MjA@._V1_SY1000_CR0,0,666,1000_AL_.jpg" class="card-img-top" alt="The Warriors (1979)">
               <div class="card-body">
                 <h5 class="card-title">The Warriors</h5>
@@ -23,7 +23,7 @@
           </div>
         </div>
         <div class="col-md-3">  
-          <div class="card" style="width: 15rem;">
+          <div class="card" style="width: 18rem;">
               <img src="https://m.media-amazon.com/images/M/MV5BMzQxNzQzOTQwM15BMl5BanBnXkFtZTgwMDQ2NTcwODM@._V1_SY1000_CR0,0,674,1000_AL_.jpg" class="card-img-top" alt="Midsommar (2019)">
               <div class="card-body">
                 <h5 class="card-title">Midsommar</h5>
@@ -33,7 +33,7 @@
           </div>
         </div>
         <div class="col-md-3">  
-          <div class="card" style="width: 15rem;">
+          <div class="card" style="width: 18rem;">
               <img src="https://m.media-amazon.com/images/M/MV5BMTYzMDM4NzkxOV5BMl5BanBnXkFtZTgwNzM1Mzg2NzM@._V1_SY1000_CR0,0,674,1000_AL_.jpg" class="card-img-top" alt="Toy Story 4 (2019)">
               <div class="card-body">
                 <h5 class="card-title">Toy Story 4</h5>
@@ -44,14 +44,14 @@
         </div> <!-- End 3rd Movie Column -->
      </div> <!-- End Movie Row -->
      <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-3">
           <form id="ticket">
             <div class="form-group">
               <label for="movieTitle">Select Movie:</label>
               <select class="form-control" id="movieTitle">
                 <option value="classic">The Warriors</option>
-                <option value="first-release">Toy Story 4</option>
-                <option value="first-release">Midsommar</option>
+                <option value="first-run">Toy Story 4</option>
+                <option value="first-run">Midsommar</option>
               </select>
             </div>
             <div class="form-group">
@@ -74,6 +74,11 @@
           </form>
         </div> <!-- End Form Column -->
       </div> <!-- End Form Row -->
+      
+      <div id="results">
+
+      </div>
+
    </div>
   </body>
 </html>
