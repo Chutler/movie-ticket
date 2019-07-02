@@ -9,34 +9,71 @@
     <!-- https://github.com/mrtsanchez/ticket-movies/ -->
   </head>
   <body>
-   <div class="container">
-     <form id="ticket">
-  <div class="form-group">
-    <label for="movieTitle">Select Movie:</label>
-    <select class="form-control" id="movieTitle">
-      <option value="classic">The Warriors</option>
-      <option value="first-release">Toy Story 4</option>
-      <option value="first-release">Midsommar</option>
-    </select>
-  </div>
-  <div class="form-group">
-    <label for="movieTime">Select Show Time:</label>
-    <select class="form-control" id="movieTime">
-      <option value="matinee">1:00 PM</option>
-      <option value="evening">7:00 PM</option>
-      <option value="evening">10:00 PM</option>
-    </select>
-  </div>
-  <div class="form-group">
-    <label for="age">Age:</label>
-    <select class="form-control" id="age">
-      <option value="junior">Junior</option>
-      <option value="adult">Adult</option>
-      <option value="senior">Senior</option>
-    </select>
-    <button type="submit" class="btn btn-primary">Select</button>
-  </div>
-</form>
+   <div class="container-fluid">
+     <h1 class="display-4">Now Playing at Epicodus Cinema 3 </h1>
+     <div class="row">
+        <div class="col-md-3">
+          <div class="card" style="width: 15rem;">
+              <img src="https://m.media-amazon.com/images/M/MV5BZTBmNTQ5OGYtNmJjYi00NTVjLTg2YzgtMTAxM2NiZDdhZTQyXkEyXkFqcGdeQXVyNTc4Njg5MjA@._V1_SY1000_CR0,0,666,1000_AL_.jpg" class="card-img-top" alt="The Warriors (1979)">
+              <div class="card-body">
+                <h5 class="card-title">The Warriors</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Cult Classic Cinema</h6>
+                <p class="card-text">When a charismatic leader he is killed, The Warriors are falsely blamed and now must fight their way home while every other gang is hunting them down.</p>
+              </div>
+          </div>
+        </div>
+        <div class="col-md-3">  
+          <div class="card" style="width: 15rem;">
+              <img src="https://m.media-amazon.com/images/M/MV5BMzQxNzQzOTQwM15BMl5BanBnXkFtZTgwMDQ2NTcwODM@._V1_SY1000_CR0,0,674,1000_AL_.jpg" class="card-img-top" alt="Midsommar (2019)">
+              <div class="card-body">
+                <h5 class="card-title">Midsommar</h5>
+                <h6 class="card-subtitle mb-2 text-muted">New Release</h6>
+                <p class="card-text">A couple travels to Sweden to visit a rural hometown's fabled mid-summer festival. What begins as an idyllic retreat quickly devolves into an increasingly violent and bizarre competition at the hands of a pagan cult.</p>
+              </div>
+          </div>
+        </div>
+        <div class="col-md-3">  
+          <div class="card" style="width: 15rem;">
+              <img src="https://m.media-amazon.com/images/M/MV5BMTYzMDM4NzkxOV5BMl5BanBnXkFtZTgwNzM1Mzg2NzM@._V1_SY1000_CR0,0,674,1000_AL_.jpg" class="card-img-top" alt="Toy Story 4 (2019)">
+              <div class="card-body">
+                <h5 class="card-title">Toy Story 4</h5>
+                <h6 class="card-subtitle mb-2 text-muted">New Release</h6>
+                <p class="card-text">When a new toy called "Forky" joins Woody and the gang, a road trip alongside old and new friends reveals how big the world can be for a toy.</p>
+              </div>
+            </div>
+        </div> <!-- End 3rd Movie Column -->
+     </div> <!-- End Movie Row -->
+     <div class="row">
+        <div class="col-md-6">
+          <form id="ticket">
+            <div class="form-group">
+              <label for="movieTitle">Select Movie:</label>
+              <select class="form-control" id="movieTitle">
+                <option value="classic">The Warriors</option>
+                <option value="first-release">Toy Story 4</option>
+                <option value="first-release">Midsommar</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="movieTime">Select Show Time:</label>
+              <select class="form-control" id="movieTime">
+                <option value="matinee">1:00 PM</option>
+                <option value="evening">7:00 PM</option>
+                <option value="evening">10:00 PM</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="age">Age:</label>
+              <select class="form-control" id="age">
+                <option value="junior">Junior</option>
+                <option value="adult">Adult</option>
+                <option value="senior">Senior</option>
+              </select>
+              <button type="submit" class="btn btn-primary">Select</button>
+            </div>
+          </form>
+        </div> <!-- End Form Column -->
+      </div> <!-- End Form Row -->
    </div>
   </body>
 </html>
