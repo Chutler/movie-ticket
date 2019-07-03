@@ -1,8 +1,8 @@
 // Business Logic for Contacts
 
 function Ticket(title, time, age) {
-  this.movieTitle = title,
-  this.movieTime = time,
+  this.movie = title,
+  this.time = time,
   this.age = age
 };
 
@@ -12,13 +12,15 @@ $(document).ready(function() {
   $("form#ticket").submit(function(event) {
     event.preventDefault();
 
-    var movieTitle = ($("#movieTitle").val())
-    var movieTime = ($("#movieTime").val())
-    var age = ($("#age").val())
-    console.log(movieTitle, movieTime, age)
+    var showTitle = $("#movieTitle").val()
+    var showTime = $("#movieTime").val()
+    var userAge = $("#age").val()
+    console.log(showTitle, showTime, userAge)
 
+    var newTicket = new Ticket(showTitle, showTime, userAge);
+    console.log(newTicket);
   });
 });
 
-var newTicket = new Ticket(movieTitle, movieTime, age);
-console.log(newTicket);
+
+
