@@ -15,12 +15,29 @@ $(document).ready(function() {
     var showTitle = $("#movieTitle").val()
     var showTime = $("#movieTime").val()
     var userAge = $("#age").val()
-    console.log(showTitle, showTime, userAge)
+    // console.log(showTitle, showTime, userAge)
 
     var newTicket = new Ticket(showTitle, showTime, userAge);
-    console.log(newTicket);
+    // console.log(newTicket);
+
+    var price = 0
+
+    if (newTicket.movie === "first-run"){
+      price += 15;
+    } else {
+      price += 10;
+    }
+
+    if (newTicket.time === "matinee"){
+      price += 2
+    } else {
+       price += 5
+    }
+
+    if (newTicket.age === "adult"){
+      price += 5
+    }
+
+    $("#results").text("Your ticket price for " + newTicket.movie +" movie is $" + price + ".");
   });
 });
-
-
-
